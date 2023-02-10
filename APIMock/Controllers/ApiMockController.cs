@@ -72,7 +72,7 @@ namespace APIMock.Controllers
             {
                 var colName = col.Name;
                 var searchCriteria = col.Search.Value.Split(',');
-                if (searchCriteria.Length > 0 && !searchCriteria.Contains(registro.ToPropertyDictionary()[colName]))
+                if (!string.IsNullOrEmpty(searchCriteria[0]) && !searchCriteria.Contains(registro.ToPropertyDictionary()[colName]))
                 {
                     return false;
                 }
