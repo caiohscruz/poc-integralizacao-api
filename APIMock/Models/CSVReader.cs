@@ -3,7 +3,7 @@
     public abstract class CSVReader<T>
     {
         protected string _csvName { get; set; }
-        public List<T> GetValues()
+        public IEnumerable<T> GetValues()
         {
             return File.ReadAllLines($"Data\\{_csvName}.CSV")
                                                .Skip(1)

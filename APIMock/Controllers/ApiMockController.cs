@@ -7,6 +7,7 @@ using APIMock.ViewModels;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Linq;
 
 namespace APIMock.Controllers
 {
@@ -24,55 +25,58 @@ namespace APIMock.Controllers
         }
 
         [HttpGet("/GetRegionais")]
-        public List<RegionalViewModel> GetRegionais()
+        public IEnumerable<RegionalViewModel> GetRegionais()
         {
             var model = new RegionalModel();
             return model.GetValues();
         }
 
         [HttpGet("/GetMarcas")]
-        public List<MarcaViewModel> GetMarcas()
+        public IEnumerable<MarcaViewModel> GetMarcas()
         {
             var model = new MarcaModel();
             return model.GetValues();
         }
 
         [HttpGet("/GetCampi")]
-        public List<CampusViewModel> GetCampi()
+        public IEnumerable<CampusViewModel> GetCampi()
         {
             var model = new CampusModel();
             return model.GetValues();
         }
 
         [HttpPost("/GetAlunos")]
-        public DtResult<AlunoViewModel> GetAlunos([FromBody] DtParameters dtParameters)
+        public DataTableResult<AlunoViewModel> GetAlunos([FromBody] DataTableParameters request)
         {
             var model = new AlunoModel();
             var alunos = model.GetValues();
 
-            var result = alunos.Where(i => Procurado(i, dtParameters.Columns)).Select(i => _autoMapper.Map<AlunoViewModel>(i));
+            if (request.Filtros != null)
+            {
+                alunos = alunos.Where(i => Procurado(i, request.Filtros));
+            }
+
+            var result = alunos.Select(i => _autoMapper.Map<AlunoViewModel>(i));
 
             var filteredResultsCount = result.Count();
-            var totalResultsCount = alunos.Count;
 
-            return new DtResult<AlunoViewModel>
-            {
-                Draw = dtParameters.Draw,
-                RecordsTotal = totalResultsCount,
-                RecordsFiltered = filteredResultsCount,
-                Data = result
-                    .Skip(dtParameters.Start)
-                    .Take(dtParameters.Length)
+            return new DataTableResult<AlunoViewModel>
+            {                
+                TotalRegistros = filteredResultsCount,
+                PaginaRegistros = result
+                    .Skip((request.Pagina - 1)*request.ItemsPorPagina)
+                    .Take(request.ItemsPorPagina).ToList()
             };
         }
 
-        private Boolean Procurado(TupleDTO registro, DtColumn[] columns)
+        private Boolean Procurado(TupleDTO registro, FiltroPorId[] filtros)
         {
-            foreach (var col in columns)
+            foreach (var filtro in filtros)
             {
-                var colName = col.Name;
-                var searchCriteria = col.Search.Value.Split(',');
-                if (!string.IsNullOrEmpty(searchCriteria[0]) && !searchCriteria.Contains(registro.ToPropertyDictionary()[colName]))
+                var colName = filtro.Coluna;
+                var searchCriteria = filtro.Ids.ToList();
+                var target = registro.ToPropertyDictionary()[colName];
+                if (searchCriteria.Count > 0 && !searchCriteria.Contains(Convert.ToInt32(target)))
                 {
                     return false;
                 }
@@ -81,12 +85,15 @@ namespace APIMock.Controllers
         }
 
         [HttpPost("/ExportTable")]
-        public async Task<IActionResult> ExportTable([FromBody] DtParameters dtParameters)
+        public async Task<IActionResult> ExportTable([FromBody] DataTableParameters request)
         {
             var model = new AlunoModel();
-            var alunos = model.GetValues();
+            var result = model.GetValues();
 
-            var result = alunos.Where(i => Procurado(i, dtParameters.Columns));
+            if(request.Filtros != null && result != null)
+            {
+                result = result.Where(i => Procurado(i, request.Filtros));
+            }
 
             return File(
                 await new ExcelService().Write(result.ToList()),
