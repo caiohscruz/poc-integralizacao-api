@@ -51,10 +51,11 @@ namespace APIMock.Controllers
             var model = new OportunidadeModel();
             var alunos = model.GetValues();
 
-            if (request.Filtros != null)
-            {
-                alunos = alunos.Where(i => Procurado(i, request.Filtros));
-            }
+            //TODO ignorar filtros para terminar refatoração do front
+            //if (request.Filtros != null)
+            //{
+            //    alunos = alunos.Where(i => Procurado(i, request.Filtros));
+            //}
 
             var result = alunos.Select(i => _autoMapper.Map<OportunidadeViewModel>(i));
 
