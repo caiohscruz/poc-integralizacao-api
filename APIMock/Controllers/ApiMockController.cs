@@ -24,31 +24,31 @@ namespace APIMock.Controllers
             _autoMapper = autoMapper;
         }
 
-        [HttpGet("/GetRegionais")]
-        public IEnumerable<RegionalViewModel> GetRegionais()
+        [HttpGet("/GetResponsaveis")]
+        public IEnumerable<ResponsavelViewModel> GetResponsaveis()
         {
-            var model = new RegionalModel();
+            var model = new ResponsavelModel();
             return model.GetValues();
         }
 
-        [HttpGet("/GetMarcas")]
-        public IEnumerable<MarcaViewModel> GetMarcas()
+        [HttpGet("/GetProdutos")]
+        public IEnumerable<ProdutoViewModel> GetProdutos()
         {
-            var model = new MarcaModel();
+            var model = new ProdutoModel();
             return model.GetValues();
         }
 
-        [HttpGet("/GetCampi")]
-        public IEnumerable<CampusViewModel> GetCampi()
+        [HttpGet("/GetStatus")]
+        public IEnumerable<StatusViewModel> GetStatus()
         {
-            var model = new CampusModel();
+            var model = new StatusModel();
             return model.GetValues();
         }
 
-        [HttpPost("/GetAlunos")]
-        public DataTableResult<AlunoViewModel> GetAlunos([FromBody] DataTableParameters request)
+        [HttpPost("/GetOportunidades")]
+        public DataTableResult<OportunidadeViewModel> GetOportunidades([FromBody] DataTableParameters request)
         {
-            var model = new AlunoModel();
+            var model = new OportunidadeModel();
             var alunos = model.GetValues();
 
             if (request.Filtros != null)
@@ -56,11 +56,11 @@ namespace APIMock.Controllers
                 alunos = alunos.Where(i => Procurado(i, request.Filtros));
             }
 
-            var result = alunos.Select(i => _autoMapper.Map<AlunoViewModel>(i));
+            var result = alunos.Select(i => _autoMapper.Map<OportunidadeViewModel>(i));
 
             var filteredResultsCount = result.Count();
 
-            return new DataTableResult<AlunoViewModel>
+            return new DataTableResult<OportunidadeViewModel>
             {                
                 TotalRegistros = filteredResultsCount,
                 PaginaRegistros = result
@@ -76,7 +76,7 @@ namespace APIMock.Controllers
                 var colName = filtro.Coluna;
                 var searchCriteria = filtro.Ids.ToList();
                 var target = registro.ToPropertyDictionary()[colName];
-                if (searchCriteria.Count > 0 && !searchCriteria.Contains(Convert.ToInt32(target)))
+                if (searchCriteria.Count > 0 && !searchCriteria.Contains(target))
                 {
                     return false;
                 }
@@ -87,7 +87,7 @@ namespace APIMock.Controllers
         [HttpPost("/ExportTable")]
         public async Task<IActionResult> ExportTable([FromBody] DataTableParameters request)
         {
-            var model = new AlunoModel();
+            var model = new OportunidadeModel();
             var result = model.GetValues();
 
             if(request.Filtros != null && result != null)

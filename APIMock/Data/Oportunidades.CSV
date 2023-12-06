@@ -1,0 +1,201 @@
+NumOportunidade,Nome,Documento,Data,Status,CodStatus,Produto,CodProduto,Valor,Responsavel,CodResponsavel
+13134654,Alice,20806773000177,10/01/23,Continuar abertura,1,Seguro auto,1,1000,Clarissa,1
+13134655,Júlia,28336823000101,10/02/23,Em negociação,2,Seguro rural,2,2000,Angelina,2
+13134656,Laura,42740018000170,10/03/23,Indicação Feita,3,Prestamista PF,3,3000,Milene,3
+13134657,Luiza,62431336000166,10/04/23,Continuar abertura,1,Prestamista PJ,4,4000,Natália,4
+13134658,Helena,12872203000157,10/05/23,Em negociação,2,Seguro vida,5,5000,Flôr,5
+13134659,Maria Clara,26204630000171,10/06/23,Indicação Feita,3,Seguro auto,1,1500,Gabriel,6
+13134660,Mariana,7401222000165,10/07/23,Continuar abertura,1,Seguro rural,2,2500,Lucas,7
+13134661,Lara,50536335000105,10/08/23,Em negociação,2,Prestamista PF,3,3500,Heitor,8
+13134662,Ana Clara,33400457000142,10/09/23,Indicação Feita,3,Prestamista PJ,4,4500,Samuel,9
+13134663,Isadora,26408044000149,10/10/23,Continuar abertura,1,Seguro vida,5,5500,Theo,10
+13134664,Yasmin,57678042000101,10/11/23,Em negociação,2,Seguro auto,1,1000,Felipe,11
+13134665,Nicole,81246130000100,10/12/23,Indicação Feita,3,Seguro rural,2,2000,João Pedro,12
+13134666,Cecília,47701434000182,10/13/23,Continuar abertura,1,Prestamista PF,3,3000,Daniel,13
+13134667,Clara,748077000144,10/14/23,Em negociação,2,Prestamista PJ,4,4000,Joaquim,14
+13134668,Marina,20652347000126,10/15/23,Indicação Feita,3,Seguro vida,5,5000,Caio,15
+13134669,Bianca,81375048000186,10/16/23,Continuar abertura,1,Seguro auto,1,1500,Bryan,16
+13134670,Maria Fernanda,86548407000173,10/17/23,Em negociação,2,Seguro rural,2,2500,Antônio,17
+13134671,Amanda,36738045000105,10/18/23,Indicação Feita,3,Prestamista PF,3,3500,João Vitor,18
+13134672,Laura,52626520000108,10/19/23,Continuar abertura,1,Prestamista PJ,4,4500,Davi Lucas,19
+13134673,Luisa,3047517000124,10/20/23,Em negociação,2,Seguro vida,5,5500,Thomas,20
+13134674,Lívia,28328680000196,10/21/23,Indicação Feita,3,Seguro auto,1,1000,Emanuel,21
+13134675,Clara,27108576000123,10/22/23,Continuar abertura,1,Seguro rural,2,2000,Enrico,22
+13134676,Elisa,53272247000123,10/23/23,Em negociação,2,Prestamista PF,3,3000,Miguel,23
+13134677,Giovana,18300816000104,10/24/23,Indicação Feita,3,Prestamista PJ,4,4000,Clarissa,1
+13134678,Maitê,18501881000190,10/25/23,Continuar abertura,1,Seguro vida,5,5000,Angelina,2
+13134679,Bárbara,47552511000180,10/26/23,Em negociação,2,Seguro auto,1,1500,Milene,3
+13134680,Larissa,68863477000134,10/27/23,Indicação Feita,3,Seguro rural,2,2500,Natália,4
+13134681,Maria,50327382000130,10/28/23,Continuar abertura,1,Prestamista PF,3,3500,Flôr,5
+13134682,Eduarda,21165063000178,10/29/23,Em negociação,2,Prestamista PJ,4,4500,Gabriel,6
+13134683,Olívia,60047814000103,10/30/23,Indicação Feita,3,Seguro vida,5,5500,Lucas,7
+13134684,Agnes,71402228000156,10/31/23,Continuar abertura,1,Seguro auto,1,1000,Heitor,8
+13134685,Maísa,81060561000188,11/01/23,Em negociação,2,Seguro rural,2,2000,Samuel,9
+13134686,Jade,75305856000174,11/02/23,Indicação Feita,3,Prestamista PF,3,3000,Theo,10
+13134687,Iara,51521870000147,11/03/23,Continuar abertura,1,Prestamista PJ,4,4000,Felipe,11
+13134688,Analice,60608175000108,11/04/23,Em negociação,2,Seguro vida,5,5000,João Pedro,12
+13134689,Clarisse,33778874000123,11/05/23,Indicação Feita,3,Seguro auto,1,1500,Daniel,13
+13134690,Isabel,85856503000116,11/06/23,Continuar abertura,1,Seguro rural,2,2500,Joaquim,14
+13134691,Lia,20044721000100,11/07/23,Em negociação,2,Prestamista PF,3,3500,Caio,15
+13134692,Ariana,73777032000171,11/08/23,Indicação Feita,3,Prestamista PJ,4,4500,Bryan,16
+13134693,Yara,32228113000135,11/09/23,Continuar abertura,1,Seguro vida,5,5500,Antônio,17
+13134694,Isa,84036503000107,11/10/23,Em negociação,2,Seguro auto,1,1000,João Vitor,18
+13134695,Ingrid,50512743000119,11/11/23,Indicação Feita,3,Seguro rural,2,2000,Davi Lucas,19
+13134696,Clarissa,38358314000133,11/12/23,Continuar abertura,1,Prestamista PF,3,3000,Thomas,20
+13134697,Angelina,18761711000144,11/13/23,Em negociação,2,Prestamista PJ,4,4000,Emanuel,21
+13134698,Milene,2807512000190,11/14/23,Indicação Feita,3,Seguro vida,5,5000,Enrico,22
+13134699,Natália,24485854000173,11/15/23,Continuar abertura,1,Seguro auto,1,1500,Miguel,23
+13134700,Flôr,52725170000137,11/16/23,Em negociação,2,Seguro rural,2,2500,Clarissa,1
+13134701,Gabriel,62213442000173,11/17/23,Indicação Feita,3,Prestamista PF,3,3500,Angelina,2
+13134702,Lucas,7458660000160,11/18/23,Continuar abertura,1,Prestamista PJ,4,4500,Milene,3
+13134703,Heitor,13476480000103,11/19/23,Em negociação,2,Seguro vida,5,5500,Natália,4
+13134704,Samuel,35121421000155,11/20/23,Indicação Feita,3,Seguro auto,1,1000,Flôr,5
+13134705,Theo,5877040000130,11/21/23,Continuar abertura,1,Seguro rural,2,2000,Gabriel,6
+13134706,Felipe,54631211000151,11/22/23,Em negociação,2,Prestamista PF,3,3000,Lucas,7
+13134707,João Pedro,36186287000133,11/23/23,Indicação Feita,3,Prestamista PJ,4,4000,Heitor,8
+13134708,Daniel,85240775000197,11/24/23,Continuar abertura,1,Seguro vida,5,5000,Samuel,9
+13134709,Joaquim,30646157000150,11/25/23,Em negociação,2,Seguro auto,1,1500,Theo,10
+13134710,Caio,43676228000109,11/26/23,Indicação Feita,3,Seguro rural,2,2500,Felipe,11
+13134711,Bryan,22254614000132,11/27/23,Continuar abertura,1,Prestamista PF,3,3500,João Pedro,12
+13134712,Antônio,80555024000146,11/28/23,Em negociação,2,Prestamista PJ,4,4500,Daniel,13
+13134713,João Vitor,8162040000141,11/29/23,Indicação Feita,3,Seguro vida,5,5500,Joaquim,14
+13134714,Davi Lucas,5003770000101,11/30/23,Continuar abertura,1,Seguro auto,1,1000,Caio,15
+13134715,Thomas,47588710000148,12/01/23,Em negociação,2,Seguro rural,2,2000,Bryan,16
+13134716,Emanuel,63185030000130,12/02/23,Indicação Feita,3,Prestamista PF,3,3000,Antônio,17
+13134717,Enrico,1328176000130,12/03/23,Continuar abertura,1,Prestamista PJ,4,4000,João Vitor,18
+13134718,Miguel,76337451000180,12/04/23,Em negociação,2,Seguro vida,5,5000,Davi Lucas,19
+13134719,Lorenzo,2775727000176,12/05/23,Indicação Feita,3,Seguro auto,1,1500,Thomas,20
+13134720,Theo,28481463000131,10/01/23,Continuar abertura,1,Seguro rural,2,2500,Emanuel,21
+13134721,Bryan,77426833000143,10/02/23,Em negociação,2,Prestamista PF,3,3500,Enrico,22
+13134722,Benjamim,60751672000160,10/03/23,Indicação Feita,3,Prestamista PJ,4,4500,Miguel,23
+13134723,Gabriel,4343734000124,10/04/23,Continuar abertura,1,Seguro vida,5,5500,Clarissa,1
+13134724,Henrique,50804533000102,10/05/23,Em negociação,2,Seguro auto,1,1000,Angelina,2
+13134725,Lucas,68517514000152,10/06/23,Indicação Feita,3,Seguro rural,2,2000,Milene,3
+13134726,Mateus,14423025000102,10/07/23,Continuar abertura,1,Prestamista PF,3,3000,Natália,4
+13134727,Caio,18281011000152,10/08/23,Em negociação,2,Prestamista PJ,4,4000,Flôr,5
+13134728,David,7854140000176,10/09/23,Indicação Feita,3,Seguro vida,5,5000,Gabriel,6
+13134729,Yuri,2544761000130,10/10/23,Continuar abertura,1,Seguro auto,1,1500,Lucas,7
+13134730,Samuel,74677222000180,10/11/23,Em negociação,2,Seguro rural,2,2500,Heitor,8
+13134731,Victor,43623063000107,10/12/23,Indicação Feita,3,Prestamista PF,3,3500,Samuel,9
+13134732,Hugo,88037275000140,10/13/23,Continuar abertura,1,Prestamista PJ,4,4500,Theo,10
+13134733,Tomás,38484832000101,10/14/23,Em negociação,2,Seguro vida,5,5500,Felipe,11
+13134734,Augusto,41145253000130,10/15/23,Indicação Feita,3,Seguro auto,1,1000,João Pedro,12
+13134735,Levi,73787176000109,10/16/23,Continuar abertura,1,Seguro rural,2,2000,Daniel,13
+13134736,Kevin,7030530000121,10/17/23,Em negociação,2,Prestamista PF,3,3000,Joaquim,14
+13134737,Vinicios,35816205000124,10/18/23,Indicação Feita,3,Prestamista PJ,4,4000,Caio,15
+13134738,Kelvin,73817155000199,10/19/23,Continuar abertura,1,Seguro vida,5,5000,Bryan,16
+13134739,Renan,36350228000159,10/20/23,Em negociação,2,Seguro auto,1,1500,Antônio,17
+13134740,Francisco,71326267000111,10/21/23,Indicação Feita,3,Seguro rural,2,2500,João Vitor,18
+13134741,Apólo,38360414000102,10/22/23,Continuar abertura,1,Prestamista PF,3,3500,Davi Lucas,19
+13134742,Jonathan,6377632000155,10/23/23,Em negociação,2,Prestamista PJ,4,4500,Thomas,20
+13134743,Octávio,18485078000109,10/24/23,Indicação Feita,3,Seguro vida,5,5500,Emanuel,21
+13134744,Manuel,6464040000170,10/25/23,Continuar abertura,1,Seguro auto,1,1000,Enrico,22
+13134745,Leandro,40371735000146,10/26/23,Em negociação,2,Seguro rural,2,2000,Miguel,23
+13134746,Ricardo,26031002000131,10/27/23,Indicação Feita,3,Prestamista PF,3,3000,Clarissa,1
+13134747,Wilian,62063536000103,10/28/23,Continuar abertura,1,Prestamista PJ,4,4000,Angelina,2
+13134748,Ezequiel,10444275000178,10/29/23,Em negociação,2,Seguro vida,5,5000,Milene,3
+13134749,Fabrício,28116402000175,10/30/23,Indicação Feita,3,Seguro auto,1,1500,Natália,4
+13134750,Alexander,43075264000117,10/31/23,Continuar abertura,1,Seguro rural,2,2500,Flôr,5
+13134751,Renato,28254840000108,11/01/23,Em negociação,2,Prestamista PF,3,3500,Gabriel,6
+13134752,Edgar,24307321000100,11/02/23,Indicação Feita,3,Prestamista PJ,4,4500,Lucas,7
+13134753,Michael,12077802000189,11/03/23,Continuar abertura,1,Seguro vida,5,5500,Heitor,8
+13134754,Sr. Luiz Gustavo Nascimento,57025242764,11/04/23,Em negociação,2,Seguro auto,1,1000,Samuel,9
+13134755,Emanuella Pinto,78788827461,11/05/23,Indicação Feita,3,Seguro rural,2,2000,Theo,10
+13134756,Sra. Giovanna Pires,44582353207,11/06/23,Continuar abertura,1,Prestamista PF,3,3000,Felipe,11
+13134757,Danilo Alves,87453460034,11/07/23,Em negociação,2,Prestamista PJ,4,4000,João Pedro,12
+13134758,Enzo Azevedo,56535715558,11/08/23,Indicação Feita,3,Seguro vida,5,5000,Daniel,13
+13134759,Emanuelly Carvalho,24075840824,11/09/23,Continuar abertura,1,Seguro auto,1,1500,Joaquim,14
+13134760,Bruno Rocha,35500273540,11/10/23,Em negociação,2,Seguro rural,2,2500,Caio,15
+13134761,Mariane Carvalho,62788338082,11/11/23,Indicação Feita,3,Prestamista PF,3,3500,Bryan,16
+13134762,Beatriz Viana,6738647310,11/12/23,Continuar abertura,1,Prestamista PJ,4,4500,Antônio,17
+13134763,Eduarda Campos,18763803658,11/13/23,Em negociação,2,Seguro vida,5,5500,João Vitor,18
+13134764,Sr. Rodrigo Moura,2115848276,11/14/23,Indicação Feita,3,Seguro auto,1,1000,Davi Lucas,19
+13134765,Dr. Thales Ribeiro,63248584300,11/15/23,Continuar abertura,1,Seguro rural,2,2000,Thomas,20
+13134766,Olivia Silveira,15277204113,11/16/23,Em negociação,2,Prestamista PF,3,3000,Emanuel,21
+13134767,Dra. Isabel Carvalho,55675548777,11/17/23,Indicação Feita,3,Prestamista PJ,4,4000,Enrico,22
+13134768,Ben�cio da Luz,24713115630,11/18/23,Continuar abertura,1,Seguro vida,5,5000,Miguel,23
+13134769,Mirella Mendes,40512574790,11/19/23,Em negociação,2,Seguro auto,1,1500,Clarissa,1
+13134770,Pedro Henrique Foga�a,33236436239,11/20/23,Indicação Feita,3,Seguro rural,2,2500,Angelina,2
+13134771,Pedro Henrique Sales,83718753472,11/21/23,Continuar abertura,1,Prestamista PF,3,3500,Milene,3
+13134772,Renan Freitas,13887405242,11/22/23,Em negociação,2,Prestamista PJ,4,4500,Natália,4
+13134773,Renan Porto,63632675287,11/23/23,Indicação Feita,3,Seguro vida,5,5500,Flôr,5
+13134774,Maysa Pires,62111563080,11/24/23,Continuar abertura,1,Seguro auto,1,1000,Gabriel,6
+13134775,Luana Rodrigues,21678788856,11/25/23,Em negociação,2,Seguro rural,2,2000,Lucas,7
+13134776,Srta. Maysa Campos,82878706072,11/26/23,Indicação Feita,3,Prestamista PF,3,3000,Heitor,8
+13134777,B�rbara da Costa,41363601180,11/27/23,Continuar abertura,1,Prestamista PJ,4,4000,Samuel,9
+13134778,Nicolas Azevedo,41303250276,11/28/23,Em negociação,2,Seguro vida,5,5000,Theo,10
+13134779,Leandro Castro,13374384560,11/29/23,Indicação Feita,3,Seguro auto,1,1500,Felipe,11
+13134780,Luiz Miguel Gomes,23151637574,11/30/23,Continuar abertura,1,Seguro rural,2,2500,João Pedro,12
+13134781,Ana Clara Santos,32387100360,12/01/23,Em negociação,2,Prestamista PF,3,3500,Daniel,13
+13134782,Rafael Farias,5702210212,12/02/23,Indicação Feita,3,Prestamista PJ,4,4500,Joaquim,14
+13134783,Emanuelly Viana,37783516211,12/03/23,Continuar abertura,1,Seguro vida,5,5500,Caio,15
+13134784,Luiz Miguel Gomes,64836202256,12/04/23,Em negociação,2,Seguro auto,1,1000,Bryan,16
+13134785,Ian Moreira,28304116332,12/05/23,Indicação Feita,3,Seguro rural,2,2000,Antônio,17
+13134786,Joana Rodrigues,20015644146,10/01/23,Continuar abertura,1,Prestamista PF,3,3000,João Vitor,18
+13134787,Srta. Marina Caldeira,84662034787,10/02/23,Em negociação,2,Prestamista PJ,4,4000,Davi Lucas,19
+13134788,Murilo Jesus,61742303412,10/03/23,Indicação Feita,3,Seguro vida,5,5000,Thomas,20
+13134789,Mait� Lima,86744734156,10/04/23,Continuar abertura,1,Seguro auto,1,1500,Emanuel,21
+13134790,Laura da Concei��o,85222330800,10/05/23,Em negociação,2,Seguro rural,2,2500,Enrico,22
+13134791,Srta. Stephany Farias,7735017626,10/06/23,Indicação Feita,3,Prestamista PF,3,3500,Miguel,23
+13134792,Arthur Azevedo,88516112110,10/07/23,Continuar abertura,1,Prestamista PJ,4,4500,Clarissa,1
+13134793,Valentina Vieira,38200553205,10/08/23,Em negociação,2,Seguro vida,5,5500,Angelina,2
+13134794,Maria Alice Ara�jo,34215020212,10/09/23,Indicação Feita,3,Seguro auto,1,1000,Milene,3
+13134795,Jo�o Miguel Moreira,28128106376,10/10/23,Continuar abertura,1,Seguro rural,2,2000,Natália,4
+13134796,Luiz Ot�vio Silva,18024010321,10/11/23,Em negociação,2,Prestamista PF,3,3000,Flôr,5
+13134797,Daniel da Rocha,34705080203,10/12/23,Indicação Feita,3,Prestamista PJ,4,4000,Gabriel,6
+13134798,Calebe Rezende,81411847253,10/13/23,Continuar abertura,1,Seguro vida,5,5000,Lucas,7
+13134799,Nat�lia Santos,14316430335,10/14/23,Em negociação,2,Seguro auto,1,1500,Heitor,8
+13134800,Diogo da Rosa,58334878389,10/15/23,Indicação Feita,3,Seguro rural,2,2500,Samuel,9
+13134801,Brenda Nascimento,64674870445,10/16/23,Continuar abertura,1,Prestamista PF,3,3500,Theo,10
+13134802,Dr. Theo Moraes,10612780260,10/17/23,Em negociação,2,Prestamista PJ,4,4500,Felipe,11
+13134803,Helo�sa Sales,60136436102,10/18/23,Indicação Feita,3,Seguro vida,5,5500,João Pedro,12
+13134804,Noah Moraes,27283617892,10/19/23,Continuar abertura,1,Seguro auto,1,1000,Daniel,13
+13134805,Nicolas Pereira,37843028820,10/20/23,Em negociação,2,Seguro rural,2,2000,Joaquim,14
+13134806,Lav�nia Jesus,57415022882,10/21/23,Indicação Feita,3,Prestamista PF,3,3000,Caio,15
+13134807,Davi Lucca Campos,58045005629,10/22/23,Continuar abertura,1,Prestamista PJ,4,4000,Bryan,16
+13134808,Jo�o da Mata,35804003550,10/23/23,Em negociação,2,Seguro vida,5,5000,Antônio,17
+13134809,Eloah Martins,76434340265,10/24/23,Indicação Feita,3,Seguro auto,1,1500,João Vitor,18
+13134810,Juan Correia,36828228367,10/25/23,Continuar abertura,1,Seguro rural,2,2500,Davi Lucas,19
+13134811,Larissa Castro,85741570313,10/26/23,Em negociação,2,Prestamista PF,3,3500,Thomas,20
+13134812,La�s Porto,30171257693,10/27/23,Indicação Feita,3,Prestamista PJ,4,4500,Emanuel,21
+13134813,Carlos Eduardo Mendes,8711284110,10/28/23,Continuar abertura,1,Seguro vida,5,5500,Enrico,22
+13134814,Catarina Mendes,57722826202,10/29/23,Em negociação,2,Seguro auto,1,1000,Miguel,23
+13134815,Sabrina Silva,67335303842,10/30/23,Indicação Feita,3,Seguro rural,2,2000,Clarissa,1
+13134816,Arthur Porto,13627275209,10/31/23,Continuar abertura,1,Prestamista PF,3,3000,Angelina,2
+13134817,Dra. B�rbara Ara�jo,28120083695,11/01/23,Em negociação,2,Prestamista PJ,4,4000,Milene,3
+13134818,Dr. Ian Rezende,57763587601,11/02/23,Indicação Feita,3,Seguro vida,5,5000,Natália,4
+13134819,Dr. Samuel Alves,82341808190,11/03/23,Continuar abertura,1,Seguro auto,1,1500,Flôr,5
+13134820,Bianca Gon�alves,25527573161,11/04/23,Em negociação,2,Seguro rural,2,2500,Gabriel,6
+13134821,Clarice da Rosa,7310571800,11/05/23,Indicação Feita,3,Prestamista PF,3,3500,Lucas,7
+13134822,Sra. Ana Luiza Cardoso,64686037573,11/06/23,Continuar abertura,1,Prestamista PJ,4,4500,Heitor,8
+13134823,Ben�cio Porto,32570444456,11/07/23,Em negociação,2,Seguro vida,5,5500,Samuel,9
+13134824,Henrique Jesus,3254471601,11/08/23,Indicação Feita,3,Seguro auto,1,1000,Theo,10
+13134825,Diogo Rocha,34253566669,11/09/23,Continuar abertura,1,Seguro rural,2,2000,Felipe,11
+13134826,Sr. Pietro da Rocha,86714520778,11/10/23,Em negociação,2,Prestamista PF,3,3000,João Pedro,12
+13134827,Dr. Leandro Almeida,40677142544,11/11/23,Indicação Feita,3,Prestamista PJ,4,4000,Daniel,13
+13134828,Amanda Farias,60723527075,11/12/23,Continuar abertura,1,Seguro vida,5,5000,Joaquim,14
+13134829,Ant�nio Peixoto,18481563838,11/13/23,Em negociação,2,Seguro auto,1,1500,Caio,15
+13134830,Beatriz Lima,78533832745,11/14/23,Indicação Feita,3,Seguro rural,2,2500,Bryan,16
+13134831,Carlos Eduardo Nascimento,22188347404,11/15/23,Continuar abertura,1,Prestamista PF,3,3500,Antônio,17
+13134832,Sr. Lorenzo Mendes,31541245784,11/16/23,Em negociação,2,Prestamista PJ,4,4500,João Vitor,18
+13134833,Emanuella Mendes,50441631630,11/17/23,Indicação Feita,3,Seguro vida,5,5500,Davi Lucas,19
+13134834,Esther Almeida,12222537126,11/18/23,Continuar abertura,1,Seguro auto,1,1000,Thomas,20
+13134835,Rodrigo das Neves,76263554312,11/19/23,Em negociação,2,Seguro rural,2,2000,Emanuel,21
+13134836,Calebe Duarte,42314571827,11/20/23,Indicação Feita,3,Prestamista PF,3,3000,Enrico,22
+13134837,Ana J�lia Teixeira,16060603505,11/21/23,Continuar abertura,1,Prestamista PJ,4,4000,Miguel,23
+13134838,Davi Lucca Ribeiro,35234072495,11/22/23,Em negociação,2,Seguro vida,5,5000,Clarissa,1
+13134839,Joaquim Ara�jo,2202681698,11/23/23,Indicação Feita,3,Seguro auto,1,1500,Angelina,2
+13134840,Igor Silva,51860861695,11/24/23,Continuar abertura,1,Seguro rural,2,2500,Milene,3
+13134841,Daniel Sales,50013010689,11/25/23,Em negociação,2,Prestamista PF,3,3500,Natália,4
+13134842,Pietro Mendes,63845577460,11/26/23,Indicação Feita,3,Prestamista PJ,4,4500,Flôr,5
+13134843,Maria Eduarda Cardoso,70174374380,11/27/23,Continuar abertura,1,Seguro vida,5,5500,Gabriel,6
+13134844,Srta. Sabrina da Costa,1471707105,11/28/23,Em negociação,2,Seguro auto,1,1000,Lucas,7
+13134845,Agatha Barbosa,60471550655,11/29/23,Indicação Feita,3,Seguro rural,2,2000,Heitor,8
+13134846,B�rbara Farias,66370552208,11/30/23,Continuar abertura,1,Prestamista PF,3,3000,Samuel,9
+13134847,Isis Teixeira,65583543140,12/01/23,Em negociação,2,Prestamista PJ,4,4000,Theo,10
+13134848,Ana Sophia Jesus,72668167183,12/02/23,Indicação Feita,3,Seguro vida,5,5000,Felipe,11
+13134849,Murilo Ribeiro,10367865521,12/03/23,Continuar abertura,1,Seguro auto,1,1500,João Pedro,12
+13134850,Enzo da Mata,62883385165,12/04/23,Em negociação,2,Seguro rural,2,2500,Daniel,13
+13134851,Pietra Costela,41602402590,12/05/23,Indicação Feita,3,Prestamista PF,3,3500,Joaquim,14
+13134852,Fernanda Porto,26331566813,10/01/23,Continuar abertura,1,Prestamista PJ,4,4500,Caio,15
+13134853,Maria Vit�ria Gomes,32865086240,10/02/23,Em negociação,2,Seguro vida,5,5500,Bryan,16

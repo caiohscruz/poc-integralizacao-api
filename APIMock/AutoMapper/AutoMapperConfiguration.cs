@@ -13,7 +13,7 @@ namespace APIMock.AutoMapper
         {
             return new MapperConfiguration(cfg =>
             {
-                cfg.AddProfile(new TupleToAlunoViewModelProfile());
+                cfg.AddProfile(new TupleToOportunidadeViewModelProfile());
             });
         }
     }

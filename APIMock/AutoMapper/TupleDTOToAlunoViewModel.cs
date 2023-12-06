@@ -4,17 +4,21 @@ using AutoMapper;
 
 namespace APIMock.AutoMapper
 {
-    public class TupleToAlunoViewModelProfile : Profile
+    public class TupleToOportunidadeViewModelProfile : Profile
     {
-        public TupleToAlunoViewModelProfile()
+        public TupleToOportunidadeViewModelProfile()
         {
-            CreateMap<TupleDTO, AlunoViewModel>()
-                .ConstructUsing(c => new AlunoViewModel()
+            CreateMap<TupleDTO, OportunidadeViewModel>()
+                .ConstructUsing(c => new OportunidadeViewModel()
                 {
-                    RA = c.RA,
+                    NumOportunidade = c.NumOportunidade,
                     Nome= c.Nome,
-                    Regional= c.Regional,
-                    Polo = $"{c.Marca} - {c.Campus}"
+                    Documento= c.Documento,
+                    Data = c.Data,
+                    Status = c.Status,
+                    Produto= c.Produto,
+                    Valor= c.Valor,
+                    Responsavel= c.Responsavel,                    
                 });
         }
     }

@@ -20,7 +20,7 @@ namespace APIMock.Models.AuxiliaryModels
     public class FiltroPorId
     {                
         public string Coluna { get; set; }        
-        public int[] Ids { get; set; }
+        public string[] Ids { get; set; }
     }
     public class FiltroPorTexto
     {                
