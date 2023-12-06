@@ -57,6 +57,8 @@ namespace APIMock.Controllers
             //    alunos = alunos.Where(i => Procurado(i, request.Filtros));
             //}
 
+            //TODO incluir ordenação
+
             var result = alunos.Select(i => _autoMapper.Map<OportunidadeViewModel>(i));
 
             var filteredResultsCount = result.Count();
