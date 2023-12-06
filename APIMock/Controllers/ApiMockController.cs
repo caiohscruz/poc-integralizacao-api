@@ -75,6 +75,10 @@ namespace APIMock.Controllers
             foreach (var filtro in filtros)
             {
                 var colName = filtro.Coluna;
+                if(colName == "Data")
+                {
+                    return true;
+                }
                 var searchCriteria = filtro.Ids.ToList();
                 var target = registro.ToPropertyDictionary()[colName];
                 if (searchCriteria.Count > 0 && !searchCriteria.Contains(target))
