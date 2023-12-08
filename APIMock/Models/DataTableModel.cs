@@ -5,32 +5,35 @@ namespace APIMock.Models.AuxiliaryModels
 {    
     public class DataTableResult<T>
     {           
-        public int TotalRegistros { get; set; }                
-        public List<T>? PaginaRegistros { get; set; }       
+        public int Total { get; set; }                
+        public int Total_Pages { get; set; }                
+        public int Page { get; set; }                
+        public int Per_Page { get; set; }                
+        public List<T>? Data { get; set; }       
     }
     
     public class DataTableParameters
     {        
-        public FiltroPorId[]? Filtros { get; set; }
-        public Ordenacao? Ordenacao { get; set; }      
-        public int Pagina { get; set; }
-        public int ItemsPorPagina { get; set; }
+        public FiltroPorId[]? Filters { get; set; }
+        public Ordenacao? Order { get; set; }      
+        public int Page { get; set; }
+        public int ItemsPerPage { get; set; }
     }
     
     public class FiltroPorId
     {                
-        public string Coluna { get; set; }        
+        public string Column { get; set; }        
         public string[] Ids { get; set; }
     }
     public class FiltroPorTexto
     {                
-        public string Coluna { get; set; }        
-        public string Texto { get; set; }
+        public string Column { get; set; }        
+        public string Text { get; set; }
     }
 
     public class Ordenacao
     {
-        public string Coluna { get; set; }
+        public string Column { get; set; }
         public Direcao Dir { get; set; }
     }
         

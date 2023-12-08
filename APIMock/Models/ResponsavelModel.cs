@@ -12,8 +12,8 @@ namespace APIMock.Models
         {
             string[] values = csvLine.Split(',');
             ResponsavelViewModel regional = new ResponsavelViewModel();
-            regional.Codigo = values[0];
-            regional.Nome = values[1];           
+            regional.Id = values[0];
+            regional.Name = values[1];           
             return regional;
         }
     }

@@ -65,10 +65,13 @@ namespace APIMock.Controllers
 
             return new DataTableResult<OportunidadeViewModel>
             {                
-                TotalRegistros = filteredResultsCount,
-                PaginaRegistros = result
-                    .Skip((request.Pagina - 1)*request.ItemsPorPagina)
-                    .Take(request.ItemsPorPagina).ToList()
+                Total = filteredResultsCount,
+                Total_Pages = (int)Math.Ceiling((double)filteredResultsCount / request.ItemsPerPage),
+                Page = request.Page,
+                Per_Page= request.ItemsPerPage,
+                Data = result
+                    .Skip((request.Page - 1)*request.ItemsPerPage)
+                    .Take(request.ItemsPerPage).ToList()
             };
         }
 
@@ -76,7 +79,7 @@ namespace APIMock.Controllers
         {
             foreach (var filtro in filtros)
             {
-                var colName = filtro.Coluna;
+                var colName = filtro.Column;
                 if(colName == "Data")
                 {
                     return true;
@@ -97,9 +100,9 @@ namespace APIMock.Controllers
             var model = new OportunidadeModel();
             var result = model.GetValues();
 
-            if(request.Filtros != null && result != null)
+            if(request.Filters != null && result != null)
             {
-                result = result.Where(i => Procurado(i, request.Filtros));
+                result = result.Where(i => Procurado(i, request.Filters));
             }
 
             return File(

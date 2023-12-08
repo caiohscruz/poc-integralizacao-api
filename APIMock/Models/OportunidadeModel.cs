@@ -14,17 +14,17 @@ namespace APIMock.Models
         {
             string[] values = csvLine.Split(',');
             TupleDTO vm = new TupleDTO();
-            vm.NumOportunidade = values[0];
-            vm.Nome = values[1];           
-            vm.Documento = values[2];           
-            vm.Data = values[3];           
+            vm.Id = values[0];
+            vm.LegalEntity = values[1];           
+            vm.Registry = values[2];           
+            vm.Date = values[3];           
             vm.Status = values[4];           
-            vm.CodStatus = values[5];           
-            vm.Produto = values[6];           
-            vm.CodProduto = values[7];           
-            vm.Valor = values[8];           
-            vm.Responsavel = values[9];           
-            vm.CodResponsavel = values[10];           
+            vm.StatusId = values[5];           
+            vm.Product = values[6];           
+            vm.ProductId = values[7];           
+            vm.Value = values[8];           
+            vm.Comissioned = values[9];           
+            vm.ComissionedId = values[10];           
             return vm;
         }
     }

@@ -11,14 +11,14 @@ namespace APIMock.AutoMapper
             CreateMap<TupleDTO, OportunidadeViewModel>()
                 .ConstructUsing(c => new OportunidadeViewModel()
                 {
-                    NumOportunidade = c.NumOportunidade,
-                    Nome= c.Nome,
-                    Documento= c.Documento,
-                    Data = c.Data,
+                    Id = c.Id,
+                    LegalEntity= c.LegalEntity,
+                    Registry= c.Registry,
+                    Date = c.Date,
                     Status = c.Status,
-                    Produto= c.Produto,
-                    Valor= c.Valor,
-                    Responsavel= c.Responsavel,                    
+                    Product= c.Product,
+                    Value= c.Value,
+                    Comissioned= c.Comissioned,                    
                 });
         }
     }

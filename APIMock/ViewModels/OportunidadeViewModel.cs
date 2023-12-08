@@ -2,13 +2,13 @@
 {
     public class OportunidadeViewModel
     {
-        public string NumOportunidade { get; set; }
-        public string Nome { get; set; }
-        public string Documento { get; set; }
-        public string Data { get; set; }
+        public string Id { get; set; }
+        public string LegalEntity { get; set; }
+        public string Registry { get; set; }
+        public string Date { get; set; }
         public string Status { get; set; }
-        public string Produto { get; set; }
-        public string Valor { get; set; }
-        public string Responsavel { get; set; }
+        public string Product { get; set; }
+        public string Value { get; set; }
+        public string Comissioned { get; set; }
     }
 }

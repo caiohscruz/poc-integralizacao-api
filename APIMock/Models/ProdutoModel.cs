@@ -12,8 +12,8 @@ namespace APIMock.Models
         {
             string[] values = csvLine.Split(',');
             ProdutoViewModel vm = new ProdutoViewModel();
-            vm.Codigo = values[0];
-            vm.Nome = values[1];           
+            vm.Id = values[0];
+            vm.Name = values[1];           
             return vm;
         }
     }

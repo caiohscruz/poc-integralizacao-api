@@ -2,7 +2,7 @@
 {
     public class ResponsavelViewModel
     {
-        public string Codigo { get; set; }
-        public string Nome { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     }
 }
