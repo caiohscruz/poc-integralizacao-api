@@ -51,13 +51,11 @@ namespace APIMock.Controllers
             var model = new OportunidadeModel();
             var alunos = model.GetValues();
 
-            //TODO ignorar filtros para terminar refatoração do front
-            //if (request.Filtros != null)
-            //{
-            //    alunos = alunos.Where(i => Procurado(i, request.Filtros));
-            //}
 
-            //TODO incluir ordenação
+            if (request.Filters != null)
+            {
+                alunos = alunos.Where(i => Procurado(i, request.Filters));
+            }
 
             var result = alunos.Select(i => _autoMapper.Map<OportunidadeViewModel>(i));
 
@@ -75,22 +73,23 @@ namespace APIMock.Controllers
             };
         }
 
-        private Boolean Procurado(TupleDTO registro, FiltroPorId[] filtros)
+        private Boolean Procurado(TupleDTO registro, Filtro filtros)
         {
-            foreach (var filtro in filtros)
+            if (filtros.Status.Length > 0 && !filtros.Status.Contains(registro.StatusId))
             {
-                var colName = filtro.Column;
-                if(colName == "Data")
-                {
-                    return true;
-                }
-                var searchCriteria = filtro.Ids.ToList();
-                var target = registro.ToPropertyDictionary()[colName];
-                if (searchCriteria.Count > 0 && !searchCriteria.Contains(target))
-                {
-                    return false;
-                }
+                return false;
             }
+
+            if (filtros.Products.Length > 0 && !filtros.Products.Contains(registro.ProductId))
+            {
+                return false;
+            }
+
+            if (filtros.Comissioneds.Length > 0 && !filtros.Comissioneds.Contains(registro.ComissionedId))
+            {
+                return false;
+            }
+
             return true;
         }
 
