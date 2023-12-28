@@ -12,13 +12,13 @@ namespace APIMock.AutoMapper
                 .ConstructUsing(c => new OportunidadeViewModel()
                 {
                     Id = c.Id,
-                    LegalEntity= c.LegalEntity,
-                    Registry= c.Registry,
-                    Date = c.Date,
+                    CustomerName= c.LegalEntity,
+                    CustomerDocument= c.Registry,
+                    CommisionDate = c.Date,
                     Status = c.Status,
-                    Product= c.Product,
+                    ProductName= c.Product,
                     Value= c.Value,
-                    Comissioned= c.Comissioned,                    
+                    Commissioned= c.Comissioned,                    
                 });
         }
     }

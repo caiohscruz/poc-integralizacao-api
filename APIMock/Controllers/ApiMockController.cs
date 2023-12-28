@@ -24,14 +24,14 @@ namespace APIMock.Controllers
             _autoMapper = autoMapper;
         }
 
-        [HttpGet("/GetResponsaveis")]
+        [HttpGet("/GetCommisioneds")]
         public IEnumerable<ResponsavelViewModel> GetResponsaveis()
         {
             var model = new ResponsavelModel();
             return model.GetValues();
         }
 
-        [HttpGet("/GetProdutos")]
+        [HttpGet("/GetProducts")]
         public IEnumerable<ProdutoViewModel> GetProdutos()
         {
             var model = new ProdutoModel();
@@ -45,7 +45,7 @@ namespace APIMock.Controllers
             return model.GetValues();
         }
 
-        [HttpPost("/GetOportunidades")]
+        [HttpPost("/GetOpportunities")]
         public DataTableResult<OportunidadeViewModel> GetOportunidades([FromBody] DataTableParameters request)
         {
             var model = new OportunidadeModel();
@@ -63,13 +63,13 @@ namespace APIMock.Controllers
 
             return new DataTableResult<OportunidadeViewModel>
             {                
-                Total = filteredResultsCount,
-                Total_Pages = (int)Math.Ceiling((double)filteredResultsCount / request.ItemsPerPage),
-                Page = request.Page,
-                Per_Page= request.ItemsPerPage,
-                Data = result
-                    .Skip((request.Page - 1)*request.ItemsPerPage)
-                    .Take(request.ItemsPerPage).ToList()
+                DataCount = filteredResultsCount,
+                PageCount = (int)Math.Ceiling((double)filteredResultsCount / request.PageSize),
+                PageIndex = request.PageIndex,
+                PageSize= request.PageSize,
+                Page = result
+                    .Skip((request.PageIndex - 1)*request.PageSize)
+                    .Take(request.PageSize).ToList()
             };
         }
 
@@ -85,7 +85,7 @@ namespace APIMock.Controllers
                 return false;
             }
 
-            if (filtros.Comissioneds.Length > 0 && !filtros.Comissioneds.Contains(registro.ComissionedId))
+            if (filtros.Commissioneds.Length > 0 && !filtros.Commissioneds.Contains(registro.ComissionedId))
             {
                 return false;
             }
